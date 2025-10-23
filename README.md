@@ -15,17 +15,21 @@ A modern, responsive portfolio website showcasing my skills as a Full Stack Deve
 
 ```
 portfolio/
-├── src/                    # Frontend React application
-│   ├── components/         # React components
-│   ├── assets/            # Images and static files
-│   └── ...
-├── backend/               # Backend API server
-│   ├── server.js         # Express server
-│   ├── config.js         # Configuration
-│   ├── package.json      # Backend dependencies
-│   └── README.md         # Backend documentation
-├── public/               # Static public files
-└── package.json         # Frontend dependencies
+├── frontend/             # Frontend React application
+│   ├── src/             # React source code
+│   │   ├── components/  # React components
+│   │   ├── assets/      # Images and static files
+│   │   └── ...
+│   ├── public/          # Static public files
+│   ├── package.json     # Frontend dependencies
+│   └── README.md        # Frontend documentation
+├── backend/             # Backend API server
+│   ├── server.js        # Express server
+│   ├── config.js        # Configuration
+│   ├── package.json     # Backend dependencies
+│   └── README.md        # Backend documentation
+├── package.json         # Root package.json with scripts
+└── README.md           # Main project documentation
 ```
 
 ## 🛠️ Tech Stack
