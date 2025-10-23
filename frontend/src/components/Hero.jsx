@@ -32,127 +32,141 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center relative overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          animate={{
-            rotate: 360,
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            rotate: -360,
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl"
-        />
+        {/* Background gradients removed */}
       </div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="text-center z-10 max-w-4xl mx-auto px-4"
-      >
-        <motion.div variants={itemVariants} className="mb-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Text Content */}
           <motion.div
-            animate={{
-              scale: [1, 1.05, 1],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="w-32 h-32 mx-auto mb-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-4xl font-bold text-white"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="z-10"
           >
-            DA
-          </motion.div>
-        </motion.div>
-
-        <motion.h1
-          variants={itemVariants}
-          className="text-5xl md:text-7xl font-bold text-white mb-6"
-        >
-          <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Damilare Akinola
-          </span>
-        </motion.h1>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-300 mb-4"
-        >
-          Web Developer Building the Future of the Web
-        </motion.p>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
-        >
-          Full Stack Developer passionate about creating innovative digital
-          experiences
-        </motion.p>
-
-        <motion.div
-          variants={itemVariants}
-          className="flex flex-wrap justify-center gap-4 mb-8"
-        >
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center gap-2"
-          >
-            <Mail size={20} />
-            Get In Touch
-          </motion.a>
-
-          <motion.a
-            href="#projects"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="border-2 border-purple-500 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300 flex items-center gap-2"
-          >
-            <Download size={20} />
-            View My Work
-          </motion.a>
-        </motion.div>
-
-        <motion.div
-          variants={itemVariants}
-          className="flex justify-center space-x-6"
-        >
-          {socialLinks.map((social, index) => (
-            <motion.a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-              className="text-gray-400 hover:text-white transition-colors duration-300"
-              aria-label={social.label}
+            {/* Main heading */}
+            <motion.h1
+              variants={itemVariants}
+              className="text-5xl md:text-7xl font-bold text-white mb-6"
             >
-              <social.icon size={24} />
-            </motion.a>
-          ))}
-        </motion.div>
-      </motion.div>
+              I'm <span className="text-teal-400">Damilare Akinola</span>
+            </motion.h1>
+
+            <motion.p
+              variants={itemVariants}
+              className="text-xl md:text-2xl text-gray-300 mb-4"
+            >
+              Web Developer Building the Future of the Web
+            </motion.p>
+
+            <motion.p
+              variants={itemVariants}
+              className="text-lg text-gray-400 mb-8 max-w-lg"
+            >
+              Full Stack Developer passionate about creating innovative digital
+              experiences
+            </motion.p>
+
+            {/* Call to action buttons */}
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-wrap gap-4 mb-8"
+            >
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 flex items-center gap-2"
+              >
+                <Mail size={20} />
+                Get In Touch
+              </motion.a>
+
+              <motion.a
+                href="#projects"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="border-2 border-teal-500 text-teal-400 px-8 py-3 rounded-full font-semibold hover:bg-teal-500 hover:text-white transition-all duration-300 flex items-center gap-2"
+              >
+                <Download size={20} />
+                View My Work
+              </motion.a>
+            </motion.div>
+          </motion.div>
+
+          {/* Right Side - Image Content */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="relative z-10 flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              {/* Main image placeholder */}
+              <motion.div
+                variants={itemVariants}
+                className="w-80 h-80 bg-gray-800 rounded-2xl flex items-center justify-center relative overflow-hidden"
+              >
+                {/* Your Photo */}
+                <img
+                  src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
+                  alt="Damilare Akinola"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+
+                {/* Floating icons */}
+                <motion.div
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className="absolute top-8 left-8 w-12 h-12 bg-teal-500/20 border-2 border-teal-500/50 rounded-full flex items-center justify-center backdrop-blur-sm"
+                >
+                  <span className="text-white text-lg">&lt;/&gt;</span>
+                </motion.div>
+
+                <motion.div
+                  animate={{
+                    y: [0, 10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1,
+                  }}
+                  className="absolute top-16 right-8 w-12 h-12 bg-teal-500/20 border-2 border-teal-500/50 rounded-full flex items-center justify-center backdrop-blur-sm"
+                >
+                  <span className="text-white text-lg">⚡</span>
+                </motion.div>
+
+                <motion.div
+                  animate={{
+                    y: [0, -5, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2,
+                  }}
+                  className="absolute bottom-16 right-12 w-12 h-12 bg-teal-500/20 border-2 border-teal-500/50 rounded-full flex items-center justify-center backdrop-blur-sm"
+                >
+                  <span className="text-white text-lg">{}</span>
+                </motion.div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
 
       {/* Scroll indicator */}
       <motion.div

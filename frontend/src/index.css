@@ -12,12 +12,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+  background: #14b8a6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #7c3aed, #2563eb);
+  background: #0d9488;
 }
 
 /* Smooth scrolling */
@@ -37,10 +37,10 @@ html {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.6);
   }
 }
 
@@ -52,28 +52,24 @@ html {
   overflow: hidden;
 }
 
-/* Gradient text animation */
-.gradient-text {
-  background: linear-gradient(45deg, #8b5cf6, #3b82f6, #8b5cf6);
-  background-size: 200% 200%;
-  animation: gradient 3s ease infinite;
+/* Teal text animation */
+.teal-text {
+  color: #14b8a6;
+  animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
   }
   50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    opacity: 0.7;
   }
 }
 
 /* Custom focus styles */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50;
+  @apply focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50;
 }
 
 /* Backdrop blur fallback */

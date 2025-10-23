@@ -49,7 +49,9 @@ const Footer = () => {
         >
           {/* Brand Section */}
           <motion.div variants={itemVariants} className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">Damilare Akinola</h3>
+            <h3 className="text-teal-400 font-bold text-2xl">
+              Damilare Akinola
+            </h3>
             <p className="text-gray-400">
               Full Stack Developer passionate about creating innovative digital
               experiences and building the future of the web.
@@ -63,7 +65,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
                   aria-label={social.label}
                 >
                   <social.icon size={20} />
@@ -81,7 +83,7 @@ const Footer = () => {
                   <motion.a
                     href={link.href}
                     whileHover={{ x: 5 }}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    className="text-gray-400 hover:text-teal-400 transition-colors duration-300"
                   >
                     {link.name}
                   </motion.a>

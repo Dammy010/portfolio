@@ -134,10 +134,7 @@ const Projects = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Featured{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Projects
-            </span>
+            Featured <span className="text-teal-400">Projects</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -162,7 +159,7 @@ const Projects = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 rounded-full border border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400/50 transition-all duration-300"
+              className="px-6 py-2 rounded-full border border-teal-500/30 text-teal-300 hover:bg-teal-500/20 hover:border-teal-400/50 transition-all duration-300"
             >
               {category}
             </motion.button>
@@ -182,15 +179,15 @@ const Projects = () => {
               key={project.title}
               variants={itemVariants}
               whileHover={{ y: -10 }}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 group"
+              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300 group"
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-blue-500/20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-blue-600/30 flex items-center justify-center">
+              <div className="relative h-48 bg-teal-500/20 overflow-hidden">
+                <div className="absolute inset-0 bg-teal-600/30 flex items-center justify-center">
                   <project.icon className="w-16 h-16 text-white/60" />
                 </div>
                 <div className="absolute top-4 left-4">
-                  <span className="bg-purple-500/80 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-teal-500/80 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
                   </span>
                 </div>
@@ -201,7 +198,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-colors duration-300"
+                    className="bg-teal-500/80 backdrop-blur-sm p-3 rounded-full hover:bg-teal-500 transition-colors duration-300"
                   >
                     <Github className="w-6 h-6 text-white" />
                   </motion.a>
@@ -211,7 +208,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-colors duration-300"
+                    className="bg-teal-500/80 backdrop-blur-sm p-3 rounded-full hover:bg-teal-500 transition-colors duration-300"
                   >
                     <ExternalLink className="w-6 h-6 text-white" />
                   </motion.a>

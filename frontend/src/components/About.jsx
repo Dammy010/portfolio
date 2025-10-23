@@ -90,10 +90,7 @@ const About = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            About{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Me
-            </span>
+            About <span className="text-teal-400">Me</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -126,10 +123,10 @@ const About = () => {
                   key={skill.name}
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+                  className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-3 rounded-lg">
+                    <div className="bg-teal-500 p-3 rounded-lg">
                       <skill.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -163,10 +160,10 @@ const About = () => {
                   key={hobby.name}
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300"
+                  className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-lg">
+                    <div className="bg-cyan-500 p-3 rounded-lg">
                       <hobby.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -192,7 +189,7 @@ const About = () => {
         >
           <motion.div
             variants={itemVariants}
-            className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20"
+            className="bg-teal-500/10 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/20"
           >
             <motion.p
               variants={itemVariants}
@@ -205,7 +202,7 @@ const About = () => {
             </motion.p>
             <motion.div
               variants={itemVariants}
-              className="mt-4 text-purple-400 font-semibold"
+              className="mt-4 text-teal-400 font-semibold"
             >
               - Damilare Akinola
             </motion.div>

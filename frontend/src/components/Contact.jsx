@@ -114,10 +114,7 @@ const Contact = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Get In{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Touch
-            </span>
+            Get In <span className="text-teal-400">Touch</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -150,9 +147,9 @@ const Contact = () => {
                   href={info.href}
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
-                  className="flex items-center space-x-4 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+                  className="flex items-center space-x-4 bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300"
                 >
-                  <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-3 rounded-lg">
+                  <div className="bg-teal-500 p-3 rounded-lg">
                     <info.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -179,7 +176,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
-                    className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-lg border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+                    className="bg-slate-800/50 backdrop-blur-sm p-4 rounded-lg border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300"
                     aria-label={social.label}
                   >
                     <social.icon className="w-6 h-6 text-gray-400 hover:text-white transition-colors duration-300" />
@@ -191,11 +188,11 @@ const Contact = () => {
             {/* Availability Status */}
             <motion.div
               variants={itemVariants}
-              className="bg-gradient-to-r from-green-500/10 to-blue-500/10 backdrop-blur-sm rounded-lg p-6 border border-green-500/20"
+              className="bg-teal-500/10 backdrop-blur-sm rounded-lg p-6 border border-teal-500/20"
             >
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-green-400 font-semibold">
+                <span className="text-teal-400 font-semibold">
                   Available for work
                 </span>
               </div>
@@ -216,7 +213,7 @@ const Contact = () => {
           >
             <motion.div
               variants={itemVariants}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50"
+              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300"
             >
               <motion.h3
                 variants={itemVariants}
@@ -255,7 +252,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-500/50 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
                       placeholder="Your full name"
                     />
                   </motion.div>
@@ -274,7 +271,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-500/50 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
                       placeholder="your.email@example.com"
                     />
                   </motion.div>
@@ -293,7 +290,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                      className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-500/50 focus:ring-2 focus:ring-teal-500/20 transition-all duration-300"
                       placeholder="What's this about?"
                     />
                   </motion.div>
@@ -322,7 +319,7 @@ const Contact = () => {
                     variants={itemVariants}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-teal-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-500/25 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send size={20} />
                     Send Message

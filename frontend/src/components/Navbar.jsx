@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold text-white"
+            className="text-teal-400 font-bold text-2xl"
           >
             Damilare
           </motion.div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 href={item.href}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="text-gray-300 hover:text-white transition-colors duration-300"
+                className="text-gray-300 hover:text-teal-400 transition-colors duration-300"
               >
                 {item.name}
               </motion.a>

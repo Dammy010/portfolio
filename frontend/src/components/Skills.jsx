@@ -77,10 +77,7 @@ const Skills = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Technical{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Skills
-            </span>
+            Technical <span className="text-teal-400">Skills</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -99,7 +96,7 @@ const Skills = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-teal-500/50 transition-all duration-300"
             >
               <motion.h3
                 variants={itemVariants}
@@ -119,7 +116,7 @@ const Skills = () => {
                       <span className="text-gray-300 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-purple-400 font-semibold">
+                      <span className="text-teal-400 font-semibold">
                         {skill.level}%
                       </span>
                     </div>
@@ -134,7 +131,7 @@ const Skills = () => {
                           delay: skillIndex * 0.1,
                           ease: "easeOut",
                         }}
-                        className="h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full relative"
+                        className="h-full bg-teal-500 rounded-full relative"
                       >
                         <motion.div
                           animate={{
@@ -192,7 +189,7 @@ const Skills = () => {
               <motion.span
                 key={skill}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-purple-300 px-4 py-2 rounded-full border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300"
+                className="bg-teal-500/20 text-teal-300 px-4 py-2 rounded-full border border-teal-500/30 hover:border-teal-400/50 transition-all duration-300"
               >
                 {skill}
               </motion.span>
