@@ -1,0 +1,24 @@
+{
+    "name": "damilare-portfolio-backend",
+    "version": "1.0.0",
+    "description": "Backend API for Damilare Akinola's Portfolio",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemailer": "^6.10.1",
+        "cors": "^2.8.5"
+    },
+    "keywords": [
+        "portfolio",
+        "api",
+        "email",
+        "contact"
+    ],
+    "author": "Damilare Akinola",
+    "license": "MIT"
+}
