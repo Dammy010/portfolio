@@ -25,7 +25,11 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/Dammy010", label: "GitHub" },
     { icon: Twitter, href: "https://x.com/dammy8642?s=21", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/damilare-akinola-39382934a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      label: "LinkedIn",
+    },
     { icon: Mail, href: "mailto:akindare2025@gmail.com", label: "Email" },
   ];
 

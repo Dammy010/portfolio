@@ -34,7 +34,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. Features include user authentication, payment processing, and admin dashboard.",
-      image: "/api/placeholder/600/400",
+      image: "https://cdn.businessday.ng/2022/05/e-commerce-.jpg",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
       github: "https://github.com/Dammy010",
       live: "#",
@@ -45,7 +45,7 @@ const Projects = () => {
       title: "Task Management App",
       description:
         "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/api/placeholder/600/400",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIqkc_ITjs4p6MYGctdjHJbS3np5tl5s26tQ&s",
       technologies: [
         "React",
         "Socket.io",
@@ -59,21 +59,21 @@ const Projects = () => {
       icon: Code,
     },
     {
-      title: "Portfolio Website",
+      title: "Code Snippet",
       description:
-        "A modern, responsive portfolio website with smooth animations, dark mode, and optimized performance.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      github: "https://github.com/Dammy010",
-      live: "#",
-      category: "Frontend",
-      icon: Palette,
+        "A modern code snippet sharing platform where developers can save, organize, and share their code snippets with syntax highlighting and collaborative features.",
+      image: "/code-snippet.png",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      github: "https://github.com/Dammy010/CodeSnippet.git",
+      live: "https://code-snippet-1vg6.vercel.app",
+      category: "Full Stack",
+      icon: Code,
     },
     {
       title: "Weather Dashboard",
       description:
         "A comprehensive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/api/placeholder/600/400",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDMuR9o0bVn6zWPdijE7LSzQtKIKY_LNIUg&s",
       technologies: ["React", "Chart.js", "OpenWeather API", "Geolocation API"],
       github: "https://github.com/Dammy010",
       live: "#",
@@ -84,7 +84,7 @@ const Projects = () => {
       title: "Blog Platform",
       description:
         "A content management system for bloggers with markdown support, SEO optimization, and social sharing features.",
-      image: "/api/placeholder/600/400",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnl-pi2jGmB86E7z-H5pudBKgVkVMSMeVWKA&s",
       technologies: ["Next.js", "MDX", "Prisma", "PostgreSQL", "Vercel"],
       github: "https://github.com/Dammy010",
       live: "#",
@@ -95,7 +95,7 @@ const Projects = () => {
       title: "Mobile Banking App",
       description:
         "A secure mobile banking application with biometric authentication, transaction history, and real-time notifications.",
-      image: "/api/placeholder/600/400",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&s",
       technologies: [
         "React Native",
         "Node.js",
@@ -183,9 +183,11 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="relative h-48 bg-teal-500/20 overflow-hidden">
-                <div className="absolute inset-0 bg-teal-600/30 flex items-center justify-center">
-                  <project.icon className="w-16 h-16 text-white/60" />
-                </div>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4">
                   <span className="bg-teal-500/80 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
